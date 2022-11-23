@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Songs4You</title>
+	
+	<meta name="robots" content="All">
+	<meta name="author" content="Mark Phillip Thomassen">
+	<meta name="copyright" content="Mark Phillip Thomassen">
+	
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="bg-customPrimary text-light">
+
+<nav class="justify-content-center justify-content-sm-start navbar navbar-expand-lg navbar-dark bg-customSecondary pe-5 ps-5">
+	<a class="navbar-brand" href="index.html">Songs4You</a>
+</nav>
+
+<div class="container">
+
+	<div class="products">
+		<div class="filter p-5">
+			<div class="row">
+				<div class="col-md-4 offset-md-4">
+					<input type="search" class="form-control nameSearch" placeholder="Search songs">
+				</div>
+			</div>
+		</div>
+
+		<div class="items">
+			<!-- Her vises produkterne-->
+		</div>
+
+	</div>
+
+</div>
+
+<footer class="mt-5 text-center text-white bg-customSecondary">
+	<div class="text-center p-5">
+		<a class="text-white text-decoration-none" href="https://markphillip.dk/" target="_blank">Songs4You 2022</a>
+	</div>
+</footer>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module">
+
+	import Songs from "./js/songs.js";
+	const songs = new Songs();
+	songs.init();
+
+</script>
+</body>
+</html>
